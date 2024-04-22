@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+body{
+    margin-left: 30vh;
+    display: flex;
+    /* alinhar o cronômetro ao centro */
+    align-items: center;
+/* para colocar o cronômetro no centro foi necessário definir uma altura para ele  */
+    height: 100vh;
+    width: 100%;
+    background-image: url(img/pexels-catscoming-707582.jpg);
+    background-position: center ;   
+     background-size: cover; /* se adequa a tela do usuário */
+     background-attachment:fixed; 
+}
+/* Estilização do card */
+#stopwatch{
+    /* cor de fundo do card */
+    background-color: rgba(255, 255, 255, 0.209);
+    /* Espaçamento (afastou o circulo do card)  */
+    padding: 6rem;
+    /* border-radius: 8px; */
+}
+
+#timer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 30px;
+    /* afastou o circulo dos botões */
+    margin-bottom: 1.5rem;
+    padding: 4rem;
+    background-color: #E4EBF2;
+    height: 250px;
+    width: 250px;
+    border: 3px solid #BF8A49;
+    /* deixou a borda em forma de circulo */
+    border-radius: 100%;
+}
+/* Estilização dos Botões */
+#actions{
+    display: flex;
+    gap: 0.5rem;
+}
+#actions button{
+    display: flex;
+    width: 100%;
+    height: 40px;
+    padding: .6rem;
+    /* aumenbtou o tamanho dos icones  */
+    font-size: 1rem;
+    align-items: center;
+    /* centralizou os icones */
+    justify-content: center;
+    color: #BF8A49;
+    border: none;
+    background-color: aliceblue;
+    cursor: pointer;
+    transition: background-color .2s ease-in;
+}
+#actions button:hover{
+    background-color: #bf8a4921;
+}
+#marks-list{
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+    color: black;
+}
+#marks-list p:first-child{
+    margin-top: 1.5rem;
+}
+
